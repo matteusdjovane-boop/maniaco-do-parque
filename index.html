@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maníaco do Parque: O Caso que Chocou o Brasil</title>
+    <!-- Carregamento do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #e5e5e5;
+        }
+        .banner-hero {
+            /* Imagem carregada diretamente do arquivo fornecido */
+            background-image: url('/file/uploaded:maniaco%20do%20parque.avif-b8ff0f23-0e02-44c6-bacb-ad50a3825d52');
+            background-size: cover;
+            background-position: center 25%; /* Ajuste para centralizar o rosto no banner */
+            position: relative;
+        }
+        .overlay {
+            /* Overlay escuro para garantir que o texto branco seja legível */
+            background-color: rgba(0, 0, 0, 0.75); 
+        }
+        .section-title {
+            border-left: 4px solid #ef4444; /* Vermelho forte para destaque */
+            padding-left: 1rem;
+        }
+        .card {
+            background-color: #262626;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(239, 68, 68, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho / Banner Hero com a Imagem Fornecida -->
+    <header class="banner-hero h-96 md:h-[500px] flex items-center justify-center rounded-b-xl shadow-2xl">
+        <div class="overlay absolute inset-0 rounded-b-xl"></div>
+        <div class="relative z-10 text-center p-4">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
+                MANÍACO DO PARQUE
+            </h1>
+            <p class="text-lg sm:text-xl text-red-400 mt-2 font-medium tracking-wider">
+                A História Real e os Fatos de um dos Casos Mais Chocantes do Brasil
+            </p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-12 max-w-7xl">
+
+        <!-- Seção 1: Introdução ao Caso -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-6 text-red-500">O Início do Terror</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Francisco de Assis Pereira, um ex-motoboy, aterrorizou a cidade de São Paulo entre 1997 e 1998, tornando-se conhecido como o "Maníaco do Parque". O palco de seus crimes era o Parque Estadual Fontes do Ipiranga (ou Parque do Estado), onde ele atraía suas vítimas, prometendo-lhes falsas oportunidades de emprego como modelos fotográficas.
+            </p>
+            <p class="text-lg leading-relaxed border-t border-red-700 pt-4 mt-6">
+                A série de assassinatos e ataques sexuais contra jovens mulheres causou pânico generalizado e mobilizou uma das maiores caçadas humanas da história recente do Brasil. Seu método de aproximação e a frieza de seus atos chocaram a nação e expuseram falhas na segurança pública da época.
+            </p>
+        </section>
+
+        <!-- Seção 2: As Vítimas e as Testemunhas (Sensível) -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-8 text-red-500">Vítimas, Sobreviventes e Testemunhas</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Card Vítimas -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-red-400 mb-3">O Preço da Fúria</h3>
+                    <p class="text-base mb-4 text-gray-300">
+                        O Maníaco do Parque foi condenado por 11 assassinatos e vários estupros e tentativas de homicídio. As vítimas eram majoritariamente jovens que sonhavam com uma carreira na moda, um fator que ele explorava para ganhar confiança.
+                    </p>
+                    <ul class="list-disc list-inside text-sm text-gray-400 ml-4">
+                        <li>Foco na memória das vítimas e na importância de não serem esquecidas.</li>
+                        <li>A dor e o trauma infligidos às famílias.</li>
+                        <li>A busca por justiça como motor da investigação.</li>
+                    </ul>
+                </div>
+
+                <!-- Card Testemunhas/Sobreviventes -->
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-red-400 mb-3">O Ponto de Virada</h3>
+                    <p class="text-base mb-4 text-gray-300">
+                        O depoimento de uma sobrevivente foi crucial para a identificação e captura de Francisco de Assis. Seu relato detalhado sobre a abordagem, a falsa promessa de trabalho e o local dos ataques forneceu à polícia as pistas necessárias.
+                    </p>
+                    <blockquote class="border-l-4 border-red-500 pl-4 italic text-sm text-gray-400">
+                        "O testemunho dela não só salvou outras vidas, mas deu voz às que foram silenciadas, permitindo que a justiça fosse buscada." - (Depoimento fictício de um investigador)
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Artigos e Cobertura Jornalística -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold mb-6 text-red-500">A Cobertura Midiática da Época</h2>
+            <div class="space-y-6 text-gray-300">
+                <div class="p-4 bg-zinc-800 rounded-lg">
+                    <h3 class="font-semibold text-xl text-red-300">A Caçada Humana</h3>
+                    <p class="text-base">
+                        A imprensa brasileira deu ampla cobertura ao caso, noticiando cada nova vítima e cada passo da polícia. A repercussão ajudou a alertar a população, mas também gerou uma onda de histeria e boatos. Artigos destacavam o perfil psicológico do agressor e a ineficiência inicial em ligar os crimes.
+                    </p>
+                </div>
+                <div class="p-4 bg-zinc-800 rounded-lg">
+                    <h3 class="font-semibold text-xl text-red-300">A Captura e a Confissão</h3>
+                    <p class="text-base">
+                        Após intensa investigação, Francisco de Assis foi preso no Maranhão. Sua confissão detalhada e fria chocou os investigadores e o público, revelando a extensão de sua crueldade e o planejamento meticuloso por trás de seus crimes no parque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: O Julgamento e o Legado -->
+        <section>
+            <h2 class="section-title text-3xl font-bold mb-6 text-red-500">Justiça e Reflexão</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                Francisco de Assis Pereira foi condenado a uma pena que, somada, ultrapassou os 260 anos de reclusão. O caso "Maníaco do Parque" não apenas serviu como um marco na história criminal brasileira, mas também impulsionou debates importantes sobre segurança em parques públicos, o tratamento de casos de violência sexual e a exploração de sonhos por criminosos.
+            </p>
+            
+            <!-- Link Personalizado Inserido Aqui -->
+            <div class="text-center mt-8 p-6 bg-red-800/20 rounded-xl border border-red-600">
+                <h3 class="text-xl font-bold mb-4 text-red-400">Quer saber mais sobre o Maníaco do Parque?</h3>
+                <a href="https://pt.wikipedia.org/wiki/Man%C3%ADaco_do_Parque" target="_blank" class="inline-block px-8 py-3 bg-red-600 text-white font-bold rounded-full hover:bg-red-700 transition duration-300 shadow-xl">
+                    Clique Aqui para Acessar o Artigo Completo na Wikipedia
+                </a>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-black text-gray-400 text-center py-6 mt-12 rounded-t-xl shadow-inner">
+        <p class="text-sm">&copy; 2025 | Análise Factual do Caso Maníaco do Parque. Conteúdo destinado a fins informativos e jornalísticos.</p>
+        <div class="mt-2">
+             <a href="https://pt.wikipedia.org/wiki/Man%C3%ADaco_do_Parque" target="_blank" class="text-red-400 hover:text-red-300 underline text-sm font-medium">
+                Mais detalhes sobre o caso (Wikipedia)
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
